@@ -1,0 +1,132 @@
+/* 🌌 إعدادات عامة */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Caveat', 'Covered By Your Grace', cursive;
+  background-color: #2d3c2f;
+  color: #eaf4ea;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 🔝 الرأس */
+header {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #6d8163;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: #eaf4ea;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #bfd8b8;
+}
+
+/* 🧠 الأقسام */
+main {
+  flex: 1;
+  padding: 40px 20px;
+}
+
+section {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+section h2 {
+  font-size: 2rem;
+  color: #bfd8b8;
+  margin-bottom: 15px;
+}
+
+section p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  line-height: 1.6;
+}
+
+.projects {
+  display: flex;               /* يخلي الصور تصطف جنب بعض */
+  justify-content: center;     /* يوسّط الصف أفقيًا */
+  gap: 20px;                   /* مسافة بين الصور */
+  flex-wrap: wrap;             /* يخليهم ينزلوا سطر ثاني في الشاشات الصغيرة */
+  margin-top: 30px;
+}
+
+.projects img {
+  width: 30%;                  /* كل صورة تأخذ تقريبًا ثلث الصفحة */
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  transition: transform 0.3s;
+}
+
+.projects img:hover {
+  transform: scale(1.09);
+}
+
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ✉️ قسم التواصل */
+.contact-btn {
+  display: inline-block;
+  margin-top: 20px;
+  background-color: #bfd8b8;
+  color: #2d3c2f;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.contact-btn:hover {
+  background-color: #bfd8b8;
+  transform: scale(1.05);
+}
+
+/* 👣 الفوتر */
+footer {
+  text-align: center;
+  padding: 15px 0;
+  background-color: #6d8163;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px; 
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  }
+section#contact a {
+  color: #bfd8b8;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+section#contact a:hover {
+  color: #eaf4ea;
+  text-shadow: 0 0 2px #ffffff;
+}
